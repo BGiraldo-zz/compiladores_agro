@@ -1,0 +1,146 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    min-height: 200px;
+    background-color: white;
+    margin: 10px;
+}
+.flex-center-col{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background-color: #6A6E71;
+}
+
+.card-content {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    justify-content: space-around;
+}
+
+.card-footer {
+    width: 100%;
+    height: 15%;
+}
+
+.card-header-icon {
+    width: 20%;
+    height: 100%;
+    background-color: #545657;
+}
+
+.card-content-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 55%;
+}
+
+.card-header-message {
+    width: 65%;
+    padding-left: 15px;
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.key {
+    width: 49% !important;
+    color: black !important;
+}
+
+.value {
+    width: 40%;
+    min-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(154, 156, 158);
+    font-size: 0.8rem;
+}
+
+.card-content-shipp-info {
+    width: 90%;
+    height: 30%;
+    background-color: #EDF0F3;
+    overflow-y: scroll;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    color: rgb(154, 156, 158);
+}
+
+.card-header-icon-state {
+    width: 15%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+}
+
+.card-header-icon-state-cancelled {
+    color: #FF0000;
+}
+
+.card-header-icon-state-assigned {
+    color: #FFAA00;
+}
+
+.card-header-icon-state-pickedup {
+    color: #00CF0E;
+}
+
+.card-header-icon-state-delivired {
+    color: #01579B;
+}
+
+.card-header-icon-state-published {
+    color: #00CFBA;
+}
+
+.card-header-icon-state-created {
+    color: #FAFAFA;
+}
+
+.mat-btn {
+    background-color: #F37200;
+    color: white;
+    width: 90%;
+}
+
+.nocandidates {
+    -webkit-box-shadow: inset 0px 84px 10px -41px rgba(244, 67, 54, 1);
+    -moz-box-shadow: inset 0px 84px 10px -41px rgba(244, 67, 54, 1);
+    box-shadow: inset 0px 84px 10px -41px rgba(244, 67, 54, 1);
+}
+
+.with-candidates {
+    -webkit-box-shadow: inset 0px 84px 10px -41px rgba(0, 200, 83, 1);
+    -moz-box-shadow: inset 0px 84px 10px -41px rgba(0, 200, 83, 1);
+    box-shadow: inset 0px 84px 10px -41px rgba(0, 200, 83, 1);
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 5px;
+    }
+}

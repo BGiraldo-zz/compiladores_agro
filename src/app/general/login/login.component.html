@@ -1,0 +1,45 @@
+<mat-tab-group>
+    <mat-tab label="Tab 1">
+      
+<div class="login-card">
+    <h1>Ingresar</h1><br>
+    <form>
+      <input type="text" name="user" placeholder="Username" #us>
+      <input type="password" name="pass" placeholder="Password" #pas>
+      <input type="button" name="login" class="login login-submit" value="login" (click)="login(us.value,pas.value)">
+    </form>
+    
+  </div>
+    </mat-tab>
+    <mat-tab label="Tab 2">
+        <div class="login-card">
+            <h1>Registrar dueño</h1><br>
+            <form>
+                <input type="text" name="user" placeholder="documento" #documento1>
+                <input type="text" name="pass" placeholder="nombre" #nombre1>
+                <input type="text" name="user" placeholder="genero" #genero1>
+                <input type="text" name="pass" placeholder="edad" #edad1>
+                <input type="text" name="user" placeholder="usuario" #usuario1>
+                <input type="text" name="pass" placeholder="password" #password1>
+              <input type="button" name="login" class="login login-submit" value="login" (click)="registrarDuenho(documento1.value,nombre1.value,genero1.value,edad1.value,usuario1.value,password1.value)">
+            </form>
+            
+          </div>
+    </mat-tab>
+    <mat-tab label="Tab 3">
+        <div class="login-card">
+            <h1>Registrar especialista</h1><br>
+            <form>
+                <input type="text" name="user" placeholder="documento" #documento2>
+                <input type="text" name="pass" placeholder="nombre" #nombre2>
+                <input type="text" name="user" placeholder="genero" #genero2>
+                <input type="text" name="pass" placeholder="edad" #edad2>
+                <input type="text" name="user" placeholder="usuario" #usuario2>
+                <input type="text" name="pass" placeholder="password" #password2>
+              <input type="button" name="login" class="login login-submit" value="login" (click)="registrarEsp(documento2.value,nombre2.value,genero2.value,edad2.value,usuario2.value,password2.value)">
+            </form>
+            
+          </div>
+    </mat-tab>
+</mat-tab-group>
+

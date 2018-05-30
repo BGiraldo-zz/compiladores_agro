@@ -1,0 +1,18 @@
+<div class="container flex-center-row" >
+  
+  <div *ngFor="let duen of listaduenho[0].terrenos" class="card flex-center-col">
+     <label for=""><b>nombre</b> {{duen.nombre}}</label> 
+     <label for=""><b>extension</b> {{duen.extension}}</label>  
+     <label for=""><b>cantidad postulados</b> {{duen.postulados?.length}}</label> 
+
+  </div>
+
+  
+  <div class="card flex-center-col">
+    <input type="text" name="user" placeholder="nombre" #nombre>
+    <input type="text" name="user" placeholder="extension" #extension>
+    <input type="text" name="user" placeholder="productos" #productos>
+    <input type="button" name="login" class="login login-submit" value="login" (click)="addterreno(nombre.value,extension.value,productos.value)">
+  </div>
+
+</div>
